@@ -1,0 +1,57 @@
+/* Слайдер */
+.slider {
+  margin: 0 auto;
+
+  @include on-desctop {
+    display: flex;
+    height: 990px;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    .hidden {
+      display: none;
+    }
+  }
+  .slick-slide {
+    padding: 0 5px;
+    box-sizing: border-box;
+
+    img {
+      width: 100%;
+      height: auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+      @include on-desctop {
+        @include hover(transform, scale(1.05));
+      }
+    }
+  }
+
+  .slick-list {
+    overflow: visible;
+  }
+
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
+  .slick-dots {
+    bottom: -30px;
+
+    li {
+      color: $main-dots-color; // колір крапочок
+      margin: 0 4px;
+
+      button::before {
+        font-size: 9px;
+        color: #000;
+      }
+    }
+  }
+
+  .slick-dots li.slick-active button::before {
+    color: $green-accent-color;
+  }
+}

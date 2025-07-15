@@ -1,0 +1,49 @@
+.page,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+
+.page {
+  font-family: IBM, sans-serif;
+  color: $text-color;
+  scroll-behavior: smooth;
+
+  &__body {
+    margin: 0;
+    overflow-x: hidden;
+    min-width: $mobile-min-width;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    transition: all 0.3s;
+    opacity: 0;
+    transform: translateY(-100%);
+    pointer-events: none;
+
+    &:target {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: all;
+    }
+  }
+
+  &:has(.page__menu:target) {
+    overflow: hidden;
+  }
+}

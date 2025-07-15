@@ -1,0 +1,14 @@
+.galery {
+  .img-big {
+    display: none;
+  }
+
+  @include on-desctop {
+    .img-big {
+      display: flex;
+    }
+    .img-small {
+      display: none;
+    }
+  }
+}
