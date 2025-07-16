@@ -109,13 +109,13 @@
 
           <div class="menu__list">
             <div class="menu__items">
-              <a class="menu__item">Галерея</a>
-              <a class="menu__item">Виставки та події</a>
+              <a href="#galery" class="menu__item">Галерея</a>
+              <a href="#events" class="menu__item">Виставки та події</a>
             </div>
 
             <div class="menu__items">
-              <a class="menu__item">Про нас</a>
-              <a class="menu__item">Контакти</a>
+              <a href="#page-top" class="menu__item">Про нас</a>
+              <a href="#contacts" class="menu__item">Контакти</a>
             </div>
           </div>
         </div>
@@ -154,10 +154,11 @@
         </div>
       </div>
     </aside>
+    <div class="menu__overlay"></div>
 
     <main class="main">
       <div class="main__content">
-        <section class="events">
+        <section class="events" id="events">
 
           <div class="container">
             <h2 class="section__title">Актуальні події</h2>
@@ -234,7 +235,7 @@
           </article>
         </section>
 
-        <section class="galery">
+        <section class="galery" id="galery">
           <div class="container">
             <h2 class="section__title">Галерея</h2>
 
@@ -279,7 +280,7 @@
           </div>
         </section>
 
-        <section class="subscribe">
+        <section class="subscribe" id="subscribe">
           <div class="container">
             <h2 class="subscribe__title section__title">Підписка</h2>
             <p class="subscribe__text">
@@ -368,7 +369,7 @@
                   до закриття музею
                 </p>
               </div>
-              <div class="footer__contacts">
+              <div class="footer__contacts" id="contacts">
                 <p class="shedule__text">Контакти:</p>
                 <a
                   href="https://maps.app.goo.gl/hypYyFshJ2FCa6uM9"
@@ -408,12 +409,12 @@
             <div class="footer__menu">
               <div class="menu__list">
                 <div class="menu__items items-first">
-                  <a class="menu__item">Галерея</a>
-                  <a class="menu__item">Виставки та події</a>
+                  <a href="#galery" class="menu__item">Галерея</a>
+                  <a href="#events" class="menu__item">Виставки та події</a>
                 </div>
                 <div class="menu__items items-second">
-                  <a class="menu__item">Про нас</a>
-                  <a class="menu__item">Контакти</a>
+                  <a href="#page-top" class="menu__item">Про нас</a>
+                  <a href="#contacts" class="menu__item">Контакти</a>
                 </div>
               </div>
             </div>
@@ -426,6 +427,8 @@
         </div>
       </div>
     </footer>
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Slick JS -->

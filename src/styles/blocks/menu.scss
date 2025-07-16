@@ -3,6 +3,7 @@
   background-color: $green-accent-color;
   color: #fff;
   padding-top: 27px;
+
   .container {
     display: grid;
     gap: 24px;
@@ -75,6 +76,8 @@
   gap: 28px;
   .menu__item {
     margin-bottom: 24px;
+    text-decoration: none;
+    color: #fff;
     display: block;
     cursor: pointer;
 
