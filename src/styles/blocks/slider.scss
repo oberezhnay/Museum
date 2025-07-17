@@ -3,11 +3,19 @@
   margin: 0 auto;
 
   @include on-desctop {
-    display: flex;
-    height: 990px;
-    // justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    width: 100%;
+    display: grid;
+    row-gap: 30px;
+
+    @include page-grid;
+
+    .square {
+      grid-column: span 4;
+    }
+
+    .wide {
+      grid-column: span 8;
+    }
 
     .hidden {
       display: none;

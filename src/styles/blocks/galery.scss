@@ -4,9 +4,14 @@
   }
 
   @include on-desctop {
+    img {
+      width: 100%;
+    }
+
     .img-big {
       display: flex;
     }
+
     .img-small {
       display: none;
     }

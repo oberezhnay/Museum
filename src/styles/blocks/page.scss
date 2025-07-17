@@ -55,29 +55,7 @@ h2 {
   }
 }
 
-#menu:target ~ .menu__overlay {
+body:has(.page__menu:target) .menu__overlay {
   opacity: 1;
   pointer-events: auto;
 }
-
-
-// .menu--open .menu-overlay {
-//   opacity: 1;
-//   visibility: visible;
-//   pointer-events: auto;
-// }
-
-// .aside.page__menu {
-//   z-index: 100;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   height: 100vh;
-//   background-color: #fff;
-//   transform: translate(-100%);
-//   transition: transform 0.3s ease;
-// }
-
-// .menu--open .page__menu {
-//   transform: translateX(0);
-// }

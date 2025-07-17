@@ -29,6 +29,11 @@
   &__bottom {
     margin-top: 20px;
 
+    .museum__title {
+      @include on-desctop {
+        margin-bottom: 90px;
+      }
+    }
     .podii__wrapper {
       position: absolute;
       left: 0;
