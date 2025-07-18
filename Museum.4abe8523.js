@@ -1,0 +1,2 @@
+"use strict";let slickInitialized=!1;function initSlick(){let i=window.innerWidth;i<1280?slickInitialized||($(".slider").slick({dots:!0,arrows:!1,infinite:!1,slidesToShow:i<768?1:2,adaptiveHeight:!1,centerMode:!1,centerPadding:"60px"}),slickInitialized=!0):slickInitialized&&($(".slider").slick("unslick"),slickInitialized=!1)}window.addEventListener("DOMContentLoaded",function(){initSlick(),$(window).on("resize",initSlick)});
+//# sourceMappingURL=Museum.4abe8523.js.map
